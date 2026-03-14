@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d44455155e3c9e940a441b2804b36586
+guid: 4ba80b32aabd73b4197d51f5c0373435
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4844356708332901199
-    second: GroceryList_v2_0
+      213: 4340397724159018793
+    second: speechbubblepic_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GroceryList_v2_0
+      name: speechbubblepic_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 200
+        x: 78
+        y: 43
+        width: 347
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f43967d72cc9a3340800000000000000
-      internalID: 4844356708332901199
+      spriteID: 9278964dbb03c3c30800000000000000
+      internalID: 4340397724159018793
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GroceryList_v2_0: 4844356708332901199
+      speechbubblepic_0: 4340397724159018793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
