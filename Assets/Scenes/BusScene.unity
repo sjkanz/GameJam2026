@@ -167,10 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -258,8 +258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -356}
-  m_SizeDelta: {x: -344.134, y: -1194.7043}
+  m_AnchoredPosition: {x: 4.6449, y: -266.238}
+  m_SizeDelta: {x: -274.8441, y: -1374.2284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437944632
 MonoBehaviour:
@@ -299,7 +299,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437944630}
   m_CullTransparentMesh: 1
---- !u!1 &521595859
+--- !u!1 &530677829
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,85 +307,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 521595861}
-  - component: {fileID: 521595860}
+  - component: {fileID: 530677831}
+  - component: {fileID: 530677830}
   m_Layer: 0
-  m_Name: Convenience Store_0
+  m_Name: SceneLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &521595860
-SpriteRenderer:
-  serializedVersion: 2
+--- !u!114 &530677830
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521595859}
+  m_GameObject: {fileID: 530677829}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -2773671862024233475, guid: 256697170835a4b59949f73ade5d67f2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.55, y: 0.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!4 &521595861
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0795cc34aa12f46d0b511701ee666811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  SceneName: ConvenienceCutscene
+--- !u!4 &530677831
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521595859}
+  m_GameObject: {fileID: 530677829}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.3, y: 15, z: 0}
-  m_LocalScale: {x: 42.240597, y: 39.626423, z: 1}
+  m_LocalPosition: {x: -3.5, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -553,13 +507,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   eventPanel: {fileID: 437944630}
-  eventText: {fileID: 0}
+  eventText: {fileID: 1631246552}
   playerMoney: 15
   backgrounds:
   - {fileID: 1473599364}
   - {fileID: 1560123769}
-  buttonAText: {fileID: 0}
-  buttonBText: {fileID: 0}
+  buttonAText: {fileID: 2077616615}
+  buttonBText: {fileID: 942662021}
   currentStop: 0
 --- !u!4 &792496983
 Transform:
@@ -1035,7 +989,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1407234971, guid: c8c4dae386aff4d67ab81bc5dbc25d0d, type: 3}
+  m_Sprite: {fileID: 988974057080213986, guid: f46235074fa1741a7a97cbccbc5ba114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1362,7 +1316,7 @@ Transform:
   m_GameObject: {fileID: 1759054275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 0.44, z: 0}
+  m_LocalPosition: {x: -3.5, y: 0.3, z: 0}
   m_LocalScale: {x: 9.316696, y: 10.04208, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1726,5 +1680,5 @@ SceneRoots:
   - {fileID: 40573396}
   - {fileID: 1601431565}
   - {fileID: 792496983}
-  - {fileID: 521595861}
   - {fileID: 1957281720}
+  - {fileID: 530677831}

@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScrene.unity
+    guid: 5e35dec2430874ec1ae8b25730db0924
+  - enabled: 1
+    path: Assets/Scenes/BusScene.unity
+    guid: 624fca445a49e49f99b4e95332cd8ade
+  - enabled: 1
+    path: Assets/Scenes/ConvenienceCutscene.unity
+    guid: 14c77df7a0881432fa2a9ee0c784d264
+  - enabled: 1
     path: Assets/Scenes/GroceryStore.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

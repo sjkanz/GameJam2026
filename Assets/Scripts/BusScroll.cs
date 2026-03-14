@@ -3,8 +3,8 @@ using UnityEngine;
 public class BusScroll : MonoBehaviour
 {
     public float speed = 5f;
-    public float resetPositionX = -20f; 
-    public float startPositionX = 20f;  
+    public float resetPositionX = -1f; // -20f
+    public float startPositionX = 1f;  // 20f
 
     void Update()
     {

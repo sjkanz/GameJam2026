@@ -1,21 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class BusGameManager : MonoBehaviour
 {
     public GameObject eventPanel;
-    public Text eventText;
+    public TMP_Text eventText;
     public int playerMoney = 15; 
     public BusScroll[] backgrounds; 
-    public Text buttonAText; 
-    public Text buttonBText;
+    public TMP_Text buttonAText; 
+    public TMP_Text buttonBText;
     public int currentStop = 0;
     private float driveTimer = 0f;
+
+    bool isPaused = false;
 
     void Start()
     {
         TriggerDecision("You've boarded the bus. Will you pay the $2 fare?", 2);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     void Update()
@@ -29,13 +36,17 @@ public class BusGameManager : MonoBehaviour
         if (currentStop == 1 && driveTimer > 5f) 
         {
             currentStop = 2; 
-            //StopBusAndShow("TRAFFIC JAM AHHHH! Stay or Walk?", "Stay", "Walk");
+            StopBusAndShow("TRAFFIC JAM AHHHH! Wait or Go Back?", "Wait", "Go Back");
+            StartCoroutine(TrafficJamSequence());
+            //SceneManager.LoadScene("ConvenienceCutscene");
+            
         }
         // next stop after 15 seconds
         if (currentStop == 2 && driveTimer > 15f)
         {
             currentStop = 3; 
-            StopBusAndShow("ARRIVED: Supermarket. Get off here?", "Get Off", "Keep Riding");
+            StopBusAndShow("ARRIVED: Food Vendor. Get off here?", "Get Off", "Keep Riding");
+            SceneManager.LoadScene("ConvenienceCutscene");
         }
     }
 
@@ -60,7 +71,7 @@ public class BusGameManager : MonoBehaviour
         if (eventPanel != null) eventPanel.SetActive(true);
         if (eventText != null) eventText.text = message;
         if (buttonAText != null) buttonAText.text = "Pay $2";
-        if (buttonBText != null) buttonBText.text = "Walk";
+        if (buttonBText != null) buttonBText.text = "Go Back Home";
         Time.timeScale = 0;
     }
 
@@ -72,7 +83,9 @@ public class BusGameManager : MonoBehaviour
         ClosePopup();
     }
 
-    public void OnClickB() => ClosePopup();
+    public void OnClickB() {
+        ClosePopup();
+    }
 
     public void ClosePopup()
     {
@@ -91,5 +104,25 @@ public class BusGameManager : MonoBehaviour
         {
             if (bg != null) bg.enabled = isMoving;
         }
+    }
+    private IEnumerator WaitAndResume()
+    {
+        isPaused = true;
+        
+        yield return new WaitForSeconds(5f);
+        
+        isPaused = false;
+    }
+    IEnumerator TrafficJamSequence()
+    {
+        StopBusAndShow("TRAFFIC JAM! Please wait...", "Stay", "Walk");
+    
+        yield return new WaitForSecondsRealtime(10.0f);
+    
+        // 3. Optional: Hide the popup before leaving
+        if (eventPanel != null) eventPanel.SetActive(false);
+
+        // 4. Switch to the new scene
+        SceneManager.LoadScene("ConvenienceCutscene");
     }
 }
