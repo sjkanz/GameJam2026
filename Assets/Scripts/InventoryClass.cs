@@ -29,10 +29,10 @@ public class InventoryItem : MonoBehaviour
             return price;
         }
 
-        public bool equals(string name1, string name2)
+        public bool equals(InventoryItem item2)
         {
             //only comparing strings to remove technical discrepancies (ie, for grocery list, bad apple technically equals good apple)
-            return name1.Equals(name2, StringComparison.OrdinalIgnoreCase);
+            return this.itemName.Equals(item2.itemName, StringComparison.OrdinalIgnoreCase);
         }
     }
 
@@ -85,7 +85,24 @@ public class InventoryClass : MonoBehaviour
         return inventoryItems;
     }
 
-
+    public bool Contains(InventoryItem item)
+    {
+        InventoryItem check = new InventoryItem("1 meal (ex: Ramen, hot dog, cooked fish)");
+        if (item.equals(check))
+        {
+            //if this is supposed to represent one meal, check if there exists ramen, cooked fish, or hot dog
+        }
+        //return inventoryItems.Contains(item);
+        //must iterate through to compare the names
+        foreach (InventoryItem inven in inventoryItems)
+        {
+            if (inven.equals(item))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
