@@ -45,7 +45,7 @@ public class BusGameManager : MonoBehaviour
         if (currentStop == 2 && driveTimer > 15f)
         {
             currentStop = 3; 
-            StopBusAndShow("ARRIVED: Food Vendor. Get off here?", "Get Off", "Keep Riding");
+            StopBusAndShow("You have arrived at the Food Vendor. Get off here?", "Get Off", "Keep Riding");
             SceneManager.LoadScene("ConvenienceCutscene");
         }
     }
@@ -115,14 +115,12 @@ public class BusGameManager : MonoBehaviour
     }
     IEnumerator TrafficJamSequence()
     {
-        StopBusAndShow("TRAFFIC JAM! Please wait...", "Stay", "Walk");
+        StopBusAndShow("TRAFFIC JAM! Please wait...", "Stay", "Walk Home");
     
         yield return new WaitForSecondsRealtime(10.0f);
     
-        // 3. Optional: Hide the popup before leaving
         if (eventPanel != null) eventPanel.SetActive(false);
 
-        // 4. Switch to the new scene
         SceneManager.LoadScene("ConvenienceCutscene");
     }
 }

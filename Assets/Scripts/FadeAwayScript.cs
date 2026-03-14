@@ -7,7 +7,7 @@ public class UniversalFader : MonoBehaviour
     public FadeMode mode;
     
     public float fadeTime = 2.0f;
-    public GameObject nextObject; // The next screen to trigger
+    public GameObject nextObject;
     
     private TextMeshProUGUI textElement;
     private float alphaValue;
@@ -18,18 +18,12 @@ public class UniversalFader : MonoBehaviour
     {
         textElement = GetComponent<TextMeshProUGUI>();
         fadeSpeed = 1.0f / fadeTime;
-
-        // Set initial alpha based on mode
         if (mode == FadeMode.FadeIn) {
             alphaValue = 0;
         } else {
             alphaValue = 1;
         }
-        
-        // Apply initial alpha
         SetAlpha(alphaValue);
-
-        // Hide next object until we are done
         if (nextObject != null) nextObject.SetActive(false);
     }
 
@@ -42,7 +36,7 @@ public class UniversalFader : MonoBehaviour
             alphaValue += fadeSpeed * Time.deltaTime;
             if (alphaValue >= 1) { alphaValue = 1; Finish(); }
         }
-        else // Fade Out
+        else
         {
             alphaValue -= fadeSpeed * Time.deltaTime;
             if (alphaValue <= 0) { alphaValue = 0; Finish(); }
@@ -64,7 +58,6 @@ public class UniversalFader : MonoBehaviour
         if (nextObject != null)
         {
             nextObject.SetActive(true);
-            // If the next object has this script set to 'FadeIn', it starts now!
         }
     }
 }
