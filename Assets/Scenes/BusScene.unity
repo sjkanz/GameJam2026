@@ -851,8 +851,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
+  m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1281,8 +1281,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You are coming up to your next stop!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d71166430ef44b8d900c9e99e147387, type: 2}
-  m_sharedMaterial: {fileID: -2096332762764498095, guid: 4d71166430ef44b8d900c9e99e147387, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
+  m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1720,8 +1720,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
+  m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
