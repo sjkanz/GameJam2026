@@ -41,7 +41,7 @@ public class PlayerClass : MonoBehaviour
         //text component
         // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
         // print("in else");
-        m_text.autoSizeTextContainer = true;
+        // m_text.autoSizeTextContainer = true;
 
         //set text
         // msg = toString();
@@ -52,10 +52,6 @@ public class PlayerClass : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (updateNeeded) {
-        //     print("Updating list");
-        //     updateNeeded = false;
-        // }
     }
 
 
