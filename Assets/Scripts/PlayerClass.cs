@@ -14,7 +14,7 @@ public class PlayerClass : MonoBehaviour
     //variables for grocery list
     public static List<InventoryItem> needToBuy = new List<InventoryItem>();
     public static List<InventoryItem> wantToBuy = new List<InventoryItem>();
-    public TMP_Text m_text;
+    public static TMP_Text m_text;
 
     // public string msg;
 
@@ -49,20 +49,13 @@ public class PlayerClass : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
 
     /* BUTTON TESTING LOGIC */
-    public void changeGroceryList()
+    public static void changeGroceryList(InventoryItem item)
     {
-        InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
-        addItem(apple);
-        string holder = toString();
-        // Debug.Log(holder);
-        m_text.text = holder;
+        // InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
+        addItem(item);
+        m_text.text = toString();
         print("after .text call");
     }
 
@@ -72,7 +65,7 @@ public class PlayerClass : MonoBehaviour
     /*
      * print grocery list in string format
     */
-    public string toString()
+    public static string toString()
     {
         string done = "Need to Buy:\n";
         //adding needToBuy

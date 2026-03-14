@@ -30,6 +30,6 @@ public class TestScript : MonoBehaviour
     {
         InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
         PlayerClass.addItem(apple);
-        pm.m_text.text= "hi";
+        // pm.m_text.text= "hi";
     }
 }

@@ -7,6 +7,7 @@ public class InventoryItem : MonoBehaviour
         public string itemName;
         public double price;
         public int nutritionValue;
+        private GameObject gameObject; // game object associated with this inventory item
 
         // Constructors for InventoryItem
         public InventoryItem(string name, double prc, int nutrients)
@@ -14,6 +15,7 @@ public class InventoryItem : MonoBehaviour
             itemName = name;
             price = prc;
             nutritionValue = nutrients;
+            gameObject = null;
         }
 
         //GroceryList Contructor
@@ -22,11 +24,17 @@ public class InventoryItem : MonoBehaviour
             itemName = name;
             price = 0;
             nutritionValue = 0;
+            gameObject = null;
         }
 
         public double getPrice()
         {
             return price;
+        }
+
+        public void setGameObject(GameObject go)
+        {
+            gameObject = go;
         }
 
         public bool equals(InventoryItem item2)
