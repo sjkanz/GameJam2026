@@ -56,10 +56,10 @@ public class PlayerClass : MonoBehaviour
 
 
     /* BUTTON TESTING LOGIC */
-    public void changeGroceryList()
+    public void changeGroceryList(InventoryItem item)
     {
-        InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
-        addItem(apple);
+        // InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
+        addItem(item);
         string holder = toString();
         // Debug.Log(holder);
         m_text.text = holder;
@@ -82,7 +82,8 @@ public class PlayerClass : MonoBehaviour
             {
                 done += "X " + item.itemName + "\n";
             }
-            else {
+            else
+            {
                 done += "☐" + item.itemName + "\n";
             }
         }
@@ -94,7 +95,8 @@ public class PlayerClass : MonoBehaviour
             {
                 done += "X " + item.itemName + "\n";
             }
-            else {
+            else
+            {
                 done += "☐" + item.itemName + "\n";
             }
         }
@@ -138,6 +140,18 @@ public class PlayerClass : MonoBehaviour
         setUpdateNeeded(true);
         print("Successfully removed: " + item.itemName);
     }
+
+    public static void removeRecent()
+    {
+        int index = inventory.GetList().Count - 1;
+        InventoryItem holder = inventory.GetList()[index];
+        inventory.GetList().RemoveAt(index);
+        currFunds += holder.getPrice();
+        totalNutrition -= holder.nutritionValue;
+        print("Successfully removed: " + holder.itemName);
+    }
+
+
 
     // public bool boughtItem(InventoryItem item)
     // {

@@ -3,38 +3,49 @@ using System.Collections.Generic;
 using System;
 
 public class InventoryItem : MonoBehaviour
+{
+    public string itemName;
+    public double price;
+    public int nutritionValue;
+    private GameObject gameObject; //game object assocaited with this inventory data
+
+    // Constructors for InventoryItem
+    public InventoryItem(string name, double prc, int nutrients)
     {
-        public string itemName;
-        public double price;
-        public int nutritionValue;
-
-        // Constructors for InventoryItem
-        public InventoryItem(string name, double prc, int nutrients)
-        {
-            itemName = name;
-            price = prc;
-            nutritionValue = nutrients;
-        }
-
-        //GroceryList Contructor
-        public InventoryItem(string name)
-        {
-            itemName = name;
-            price = 0;
-            nutritionValue = 0;
-        }
-
-        public double getPrice()
-        {
-            return price;
-        }
-
-        public bool equals(InventoryItem item2)
-        {
-            //only comparing strings to remove technical discrepancies (ie, for grocery list, bad apple technically equals good apple)
-            return this.itemName.Equals(item2.itemName, StringComparison.OrdinalIgnoreCase);
-        }
+        itemName = name;
+        price = prc;
+        nutritionValue = nutrients;
     }
+
+    //GroceryList Contructor
+    public InventoryItem(string name)
+    {
+        itemName = name;
+        price = 0;
+        nutritionValue = 0;
+    }
+
+    public double getPrice()
+    {
+        return price;
+    }
+
+    public bool equals(InventoryItem item2)
+    {
+        //only comparing strings to remove technical discrepancies (ie, for grocery list, bad apple technically equals good apple)
+        return this.itemName.Equals(item2.itemName, StringComparison.OrdinalIgnoreCase);
+    }
+
+    public void setGameObject(GameObject go)
+    {
+        gameObject = go;
+    }
+
+    public GameObject getGameObject()
+    {
+        return gameObject;
+    }
+}
 
 public class InventoryClass : MonoBehaviour
 {
@@ -107,12 +118,12 @@ public class InventoryClass : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

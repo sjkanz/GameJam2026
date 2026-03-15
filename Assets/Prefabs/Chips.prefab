@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 188220637799240130}
   - component: {fileID: 2700207111454770575}
   m_Layer: 6
-  m_Name: Slot
+  m_Name: Chips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
