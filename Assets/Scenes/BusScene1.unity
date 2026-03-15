@@ -638,7 +638,6 @@ MonoBehaviour:
   eventText: {fileID: 1631246552}
   buttonAText: {fileID: 2077616615}
   buttonBText: {fileID: 942662021}
-  playerMoney: 15
   backgrounds:
   - {fileID: 1473599364}
   - {fileID: 1560123769}
@@ -1009,7 +1008,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1955448553306655712, guid: 1b7aba2d0fd364f558a5e9b00cbb33a9, type: 3}
+  m_Sprite: {fileID: 6083494513118478353, guid: e76a24bfa67f44479a33e1576f40be43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1028,8 +1027,8 @@ Transform:
   m_GameObject: {fileID: 1473599363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2768, y: -0.4344, z: 0}
-  m_LocalScale: {x: 9.359848, y: 6.506138, z: 1}
+  m_LocalPosition: {x: 0.6, y: 0.7, z: 0}
+  m_LocalScale: {x: 3.7728162, y: 3.2422738, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1116,7 +1115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1955448553306655712, guid: 1b7aba2d0fd364f558a5e9b00cbb33a9, type: 3}
+  m_Sprite: {fileID: 6083494513118478353, guid: e76a24bfa67f44479a33e1576f40be43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1135,8 +1134,8 @@ Transform:
   m_GameObject: {fileID: 1560123768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.02, y: -0.41, z: 0}
-  m_LocalScale: {x: -11.085545, y: 6.5041795, z: 1}
+  m_LocalPosition: {x: 25.99, y: 0.69, z: 0}
+  m_LocalScale: {x: -4.2483025, y: 3.238262, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
