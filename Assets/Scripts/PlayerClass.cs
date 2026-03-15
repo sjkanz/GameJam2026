@@ -17,6 +17,9 @@ public class PlayerClass : MonoBehaviour
     public TMP_Text m_text;
     public static TMP_Text stat_m_text;
 
+    public TMP_Text coins;
+    public static TMP_Text stat_coins;
+
     // public string msg;
 
     // private string list;
@@ -48,6 +51,8 @@ public class PlayerClass : MonoBehaviour
         // msg = toString();
         stat_m_text = m_text;
         stat_m_text.text = toString();
+        stat_coins = coins;
+        stat_coins.text = currFunds.ToString();
 
     }
 
@@ -66,6 +71,7 @@ public class PlayerClass : MonoBehaviour
         // string holder = toString();
         // Debug.Log(holder);
         stat_m_text.text = toString();
+        stat_coins.text = currFunds.ToString();
         print("after .text call");
     }
 
