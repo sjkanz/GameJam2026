@@ -18,7 +18,7 @@ public class BusGameManager : MonoBehaviour
 
     void Start()
     {
-        TriggerDecision("The bus is here. Will you pay the $15 fare?", "Pay $15", "Go Home");
+        TriggerDecision("The bus is here. Will you pay the $5 fare?", "Pay $5", "Go Home");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -41,8 +41,8 @@ public class BusGameManager : MonoBehaviour
     public void OnClickA()
     {
         if (driveTimer < 1f) {
-            GameManager.playerMoney -= 2; 
-            Debug.Log("Paid fare. Money left: " + GameManager.playerMoney);
+            PlayerClass.payBusFare(); 
+            Debug.Log("Paid fare. Money left: " + PlayerClass.currFunds);
             ClosePopup();
         }
         else if (stopTriggered) {

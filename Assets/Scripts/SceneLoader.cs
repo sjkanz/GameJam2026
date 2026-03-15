@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+ 
 public class SceneLoader : MonoBehaviour
 {
     void Start()
@@ -8,6 +8,7 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1; 
 
     }
+    // Created using the help of Gemini AI
     public void LoadSpecificScene(string sceneName)
     {
         if (Application.CanStreamedLevelBeLoaded(sceneName))

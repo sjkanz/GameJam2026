@@ -47,8 +47,8 @@ public class BusGameManager2 : MonoBehaviour
     public void OnClickA()
     {
         if (driveTimer < 1f) {
-            GameManager.playerMoney -= 2; 
-            Debug.Log("Paid fare. Money left: " + GameManager.playerMoney);
+            PlayerClass.payBusFare(); 
+            Debug.Log("Paid fare. Money left: " + PlayerClass.currFunds);
             ClosePopup();
         }
         else if (stopTriggered) {
