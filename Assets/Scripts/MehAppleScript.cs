@@ -18,7 +18,7 @@ public class MehAppleScript : MonoBehaviour
     //Purchase when clicked
     public void purchaseMehApple()
     {
-        PlayerClass.changeGroceryList(myItem);
+        // PlayerClass.changeGroceryList(myItem);
     }
 
     // Update is called once per frame

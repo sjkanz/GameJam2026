@@ -14,7 +14,10 @@ public class PlayerClass : MonoBehaviour
     //variables for grocery list
     public static List<InventoryItem> needToBuy = new List<InventoryItem>();
     public static List<InventoryItem> wantToBuy = new List<InventoryItem>();
-    public static TMP_Text m_text;
+    public GameObject test;
+
+    public TMP_Text m_text;
+
 
     // public string msg;
 
@@ -45,17 +48,26 @@ public class PlayerClass : MonoBehaviour
 
         //set text
         // msg = toString();
+        // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
         m_text.text = toString();
 
     }
 
 
     /* BUTTON TESTING LOGIC */
-    public static void changeGroceryList(InventoryItem item)
+
+    public void testButton()
+    {
+        InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
+        addItem(apple);
+        m_text.text = toString();
+        print("after .text call in test");
+    }
+    public void changeGroceryList(InventoryItem item)
     {
         // InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
         addItem(item);
-        m_text.text = toString();
+        // m_text.text = "merp";
         print("after .text call");
     }
 
