@@ -1816,7 +1816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: 204}
+  m_AnchoredPosition: {x: 525, y: 158}
   m_SizeDelta: {x: 425.7784, y: 107.2871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947563802
@@ -1832,7 +1832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 1947563803}
-  fullText: Title
+  fullText: ---------\nShop it out!\n---------
   delay: 0.065
 --- !u!114 &1947563803
 MonoBehaviour:
@@ -1854,7 +1854,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Title
+  m_text: '---------
+
+    Shop it out!
+
+    ---------'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -1881,8 +1885,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
