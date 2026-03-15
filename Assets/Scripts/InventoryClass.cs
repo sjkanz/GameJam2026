@@ -7,7 +7,7 @@ public class InventoryItem : MonoBehaviour
     public string itemName;
     public double price;
     public int nutritionValue;
-    private GameObject gameObject; //game object assocaited with this inventory data
+    private GameObject gameObject; //game object associated with this inventory data
 
     // Constructors for InventoryItem
     public InventoryItem(string name, double prc, int nutrients)
@@ -49,7 +49,7 @@ public class InventoryItem : MonoBehaviour
 
 public class InventoryClass : MonoBehaviour
 {
-    private List<InventoryItem> inventoryItems; //list of items currently in player inventory
+    private List<InventoryItem> inventoryItems; //list of items currently in player inventory, unique due to using inventory for needToBuy and wantToBuy
     int maxNumItems = 5; //max num of items is 5
     int currentItemCount = 0; //number of items currently in inventory
 
@@ -102,28 +102,27 @@ public class InventoryClass : MonoBehaviour
         if (item.equals(check))
         {
             //if this is supposed to represent one meal, check if there exists ramen, cooked fish, or hot dog
-        }
+            InventoryItem hotdog = new InventoryItem("Hot dog");
+            InventoryItem cookedFish = new InventoryItem("Cooked Fish");
+            InventoryItem ramen = new InventoryItem("Ramen");
+            foreach (InventoryItem inven in inventoryItems)
+            {
+                if (inven.equals(hotdog) || inven.equals(cookedFish) || inven.equals(ramen))
+                {
+                    return true;
+                }
+            }
+        } else {
         //return inventoryItems.Contains(item);
         //must iterate through to compare the names
         foreach (InventoryItem inven in inventoryItems)
-        {
-            if (inven.equals(item))
             {
-                return true;
+                if (inven.equals(item))
+                {
+                    return true;
+                }
             }
         }
         return false;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

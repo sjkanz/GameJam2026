@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerClass : MonoBehaviour
 {
-    public static double currFunds = 100;
+    public static double currFunds = 50;
     public static double busFare = 5;
     public static InventoryClass inventory;
     public static int totalNutrition = 0;
@@ -40,7 +40,7 @@ public class PlayerClass : MonoBehaviour
         wantToBuy.Add(new InventoryItem("Eggs"));
 
         //text component
-        
+
         // print("in else");
         // m_text.autoSizeTextContainer = true;
 
@@ -55,7 +55,11 @@ public class PlayerClass : MonoBehaviour
     /* BUTTON TESTING LOGIC */
     public void changeGroceryList(InventoryItem item)
     {
-
+        if (currFunds < item.getPrice() + busFare)
+        {
+            print("Cannot afford food!");
+            return;
+        }
         // InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
         // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
         addItem(item);
@@ -77,6 +81,7 @@ public class PlayerClass : MonoBehaviour
         //adding needToBuy
         foreach (InventoryItem item in needToBuy)
         {
+            //meal dealt with in InventoryClass
             if (inventory.Contains(item))
             {
                 done += "X " + item.itemName + "\n";
@@ -121,7 +126,7 @@ public class PlayerClass : MonoBehaviour
      * add an item to inventory list
      */
 
-    public static void addItem(InventoryItem item)
+    public void addItem(InventoryItem item)
     {
         print(item.itemName + "\n");
         inventory.AddItem(item);
@@ -140,13 +145,15 @@ public class PlayerClass : MonoBehaviour
         print("Successfully removed: " + item.itemName);
     }
 
-    public static void removeRecent()
+    public void removeRecent()
     {
         int index = inventory.GetList().Count - 1;
         InventoryItem holder = inventory.GetList()[index];
         inventory.GetList().RemoveAt(index);
         currFunds += holder.getPrice();
         totalNutrition -= holder.nutritionValue;
+        stat_m_text.text = toString();
+        print("after .text call");
         print("Successfully removed: " + holder.itemName);
     }
 

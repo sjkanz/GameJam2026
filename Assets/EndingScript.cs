@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
-public class TextEngine : MonoBehaviour
+public class EngineScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public string[] sentences;
@@ -13,14 +13,12 @@ public class TextEngine : MonoBehaviour
     public Text text;
     public GameObject dialogue;
     public Button nextButton;
-    private int currentSceneIndex;
     private Coroutine typingCoroutine;
     public float delay = 0.001f;
     private bool isTyping = false;
 
     void Start()
     {
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (sentences.Length > 0)
         {
             typingCoroutine = StartCoroutine(RevealCharacters(sentences[index]));
@@ -45,28 +43,29 @@ public class TextEngine : MonoBehaviour
         }
         else
         {
-            index = 0;
+            index++;
             dialogue.SetActive(false);
         }
     }
 
-    public void printStatus()
+    public void PrintStatus()
     {
         print("Click");
     }
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             NextSentence();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if ((index > sentences.Length) && (Input.GetKeyDown(KeyCode.Space)))
         {
-            currentSceneIndex++;
-            SceneManager.LoadScene(currentSceneIndex);
+            SceneManager.LoadScene("ClosingScene");
         }
+
         //text.text = sentences[index];
     }
 
@@ -85,3 +84,4 @@ public class TextEngine : MonoBehaviour
 
 
 }
+
