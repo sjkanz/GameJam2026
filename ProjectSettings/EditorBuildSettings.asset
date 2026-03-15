@@ -13,12 +13,16 @@ EditorBuildSettings:
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/BusScene.unity
+    path: Assets/Scenes/Settings.unity
+    guid: 06f58573bafe74e729b7826345545a2a
+  - enabled: 1
+    path: Assets/Scenes/BusScene1.unity
     guid: 624fca445a49e49f99b4e95332cd8ade
   - enabled: 1
     path: Assets/Scenes/ConvenienceCutscene.unity
     guid: 14c77df7a0881432fa2a9ee0c784d264
   - enabled: 1
-    path: Assets/Scenes/GroceryStore.unity
+    path: Assets/Scenes/Store.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/BadEndingScene.unity
@@ -29,6 +33,35 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClosingScene.unity
     guid: 00c7843a38aa4864a827e0cd61b2f25c
+    path: Assets/Scenes/BestEndingHomeScreen.unity
+    guid: 38727b470d2e94dd0ab353d44ea4ffed
+  - enabled: 1
+    path: Assets/Scenes/InitialHomeScreen.unity
+    guid: 6360655d633414df1aaa3eb656ee5a9b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 6688ce153bea046b3908c2350f3bff09
+  - enabled: 1
+    path: Assets/Scenes/FailedEndingHomeScreen.unity
+    guid: 56aa2ceed4b004015b9fd586cf2c3f77
+  - enabled: 1
+    path: Assets/Scenes/EndingScreen.unity
+    guid: 6f36b59a5f5804dd3bb001e327e8c4c6
+  - enabled: 1
+    path: Assets/Scenes/RestaurantCutscene.unity
+    guid: c15e149ba719f4bd3a649b103485c82b
+  - enabled: 1
+    path: Assets/Scenes/SupermarketCutscene.unity
+    guid: 385449fac33604f1a97114587a837cd0
+  - enabled: 1
+    path: Assets/Scenes/BusScene2.unity
+    guid: 3815a4da009774b6e9e9194d32545a39
+  - enabled: 1
+    path: Assets/Scenes/FinalHomeScreen.unity
+    guid: 10e90f7ee9851402ca10decd5606186b
+  - enabled: 1
+    path: Assets/Scenes/BusScene3.unity
+    guid: 3ad7834577ddb4960bc52363aca606d3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

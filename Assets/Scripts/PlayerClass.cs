@@ -15,6 +15,7 @@ public class PlayerClass : MonoBehaviour
     public static List<InventoryItem> needToBuy = new List<InventoryItem>();
     public static List<InventoryItem> wantToBuy = new List<InventoryItem>();
     public TMP_Text m_text;
+    public static TMP_Text stat_m_text;
 
     // public string msg;
 
@@ -39,30 +40,28 @@ public class PlayerClass : MonoBehaviour
         wantToBuy.Add(new InventoryItem("Eggs"));
 
         //text component
-        // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
+        
         // print("in else");
         // m_text.autoSizeTextContainer = true;
 
         //set text
         // msg = toString();
-        m_text.text = toString();
+        stat_m_text = m_text;
+        stat_m_text.text = toString();
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
 
     /* BUTTON TESTING LOGIC */
-    public void changeGroceryList()
+    public void changeGroceryList(InventoryItem item)
     {
-        InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
-        addItem(apple);
-        string holder = toString();
+
+        // InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
+        // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
+        addItem(item);
+        // string holder = toString();
         // Debug.Log(holder);
-        m_text.text = holder;
+        stat_m_text.text = toString();
         print("after .text call");
     }
 
@@ -82,7 +81,8 @@ public class PlayerClass : MonoBehaviour
             {
                 done += "X " + item.itemName + "\n";
             }
-            else {
+            else
+            {
                 done += "☐" + item.itemName + "\n";
             }
         }
@@ -94,7 +94,8 @@ public class PlayerClass : MonoBehaviour
             {
                 done += "X " + item.itemName + "\n";
             }
-            else {
+            else
+            {
                 done += "☐" + item.itemName + "\n";
             }
         }
@@ -138,6 +139,18 @@ public class PlayerClass : MonoBehaviour
         setUpdateNeeded(true);
         print("Successfully removed: " + item.itemName);
     }
+
+    public static void removeRecent()
+    {
+        int index = inventory.GetList().Count - 1;
+        InventoryItem holder = inventory.GetList()[index];
+        inventory.GetList().RemoveAt(index);
+        currFunds += holder.getPrice();
+        totalNutrition -= holder.nutritionValue;
+        print("Successfully removed: " + holder.itemName);
+    }
+
+
 
     // public bool boughtItem(InventoryItem item)
     // {
