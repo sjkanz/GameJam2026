@@ -77,6 +77,7 @@ public class PlayerClass : MonoBehaviour
         //adding needToBuy
         foreach (InventoryItem item in needToBuy)
         {
+            //meal dealt with in InventoryClass
             if (inventory.Contains(item))
             {
                 done += "X " + item.itemName + "\n";
@@ -140,13 +141,15 @@ public class PlayerClass : MonoBehaviour
         print("Successfully removed: " + item.itemName);
     }
 
-    public static void removeRecent()
+    public void removeRecent()
     {
         int index = inventory.GetList().Count - 1;
         InventoryItem holder = inventory.GetList()[index];
         inventory.GetList().RemoveAt(index);
         currFunds += holder.getPrice();
         totalNutrition -= holder.nutritionValue;
+        stat_m_text.text = toString();
+        print("after .text call");
         print("Successfully removed: " + holder.itemName);
     }
 

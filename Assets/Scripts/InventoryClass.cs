@@ -102,14 +102,25 @@ public class InventoryClass : MonoBehaviour
         if (item.equals(check))
         {
             //if this is supposed to represent one meal, check if there exists ramen, cooked fish, or hot dog
-        }
+            InventoryItem hotdog = new InventoryItem("Hot dog");
+            InventoryItem cookedFish = new InventoryItem("Cooked Fish");
+            InventoryItem ramen = new InventoryItem("Ramen");
+            foreach (InventoryItem inven in inventoryItems)
+            {
+                if (inven.equals(hotdog) || inven.equals(cookedFish) || inven.equals(ramen))
+                {
+                    return true;
+                }
+            }
+        } else {
         //return inventoryItems.Contains(item);
         //must iterate through to compare the names
         foreach (InventoryItem inven in inventoryItems)
-        {
-            if (inven.equals(item))
             {
-                return true;
+                if (inven.equals(item))
+                {
+                    return true;
+                }
             }
         }
         return false;
