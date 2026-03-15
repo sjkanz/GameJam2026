@@ -19,7 +19,7 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void testButton()
@@ -29,7 +29,7 @@ public class TestScript : MonoBehaviour
     public void onClick()
     {
         InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
-        PlayerClass.addItem(apple);
-        pm.m_text.text= "hi";
+        //PlayerClass.addItem(apple);
+        pm.m_text.text = "hi";
     }
 }
