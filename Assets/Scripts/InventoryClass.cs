@@ -7,7 +7,7 @@ public class InventoryItem : MonoBehaviour
     public string itemName;
     public double price;
     public int nutritionValue;
-    private GameObject gameObject; //game object assocaited with this inventory data
+    private GameObject gameObject; //game object associated with this inventory data
 
     // Constructors for InventoryItem
     public InventoryItem(string name, double prc, int nutrients)
