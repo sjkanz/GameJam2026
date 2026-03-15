@@ -12,26 +12,22 @@ public class TypewriterEffect : MonoBehaviour
 
     void Start()
     {
-        // Start the very first message
         OnContinueButtonClicked(fullText);
     }
 
-    // Call this from the Button!
     public void OnContinueButtonClicked(string nextMessage)
     {
-        // Stop any current typing so it doesn't glitch
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
         }
 
-        // Run the typing effect for the new message
         typingCoroutine = StartCoroutine(RevealCharacters(nextMessage));
     }
 
     IEnumerator RevealCharacters(string message)
     {
-        textComponent.text = message; // Set the new text
+        textComponent.text = message; 
         textComponent.maxVisibleCharacters = 0;
 
         for (int i = 0; i <= message.Length; i++)

@@ -3,27 +3,27 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public string SceneName;
-    void Update()
+    void Start()
     {
-        
+        Time.timeScale = 1; 
+
     }
-    public void LoadSpecificScene(string sceneName) {
-        SceneManager.LoadScene(sceneName);
-    }
-    public void LoadNextScene()
+    public void LoadSpecificScene(string sceneName)
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
-    }
-    public void LoadPreviousScene()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int previousSceneIndex = currentSceneIndex - 1;
-        if (previousSceneIndex >= 0) {
-            SceneManager.LoadScene(previousSceneIndex);
-        } else {
-            Debug.LogWarning("You are at the first scene! Nowhere to go back.");
+        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
         }
+        else
+        {
+            Debug.LogError("ERROR: The scene '" + sceneName + "' cannot be loaded. " +
+                "Check that the name is spelled exactly right and it's in File > Build Settings!");
+        }
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quitting Application...");
+        Application.Quit();
     }
 }

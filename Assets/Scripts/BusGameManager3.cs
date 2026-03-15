@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using TMPro;
 
-public class BusGameManager : MonoBehaviour
+public class BusGameManager3 : MonoBehaviour
 {
     public GameObject eventPanel;
     public TMP_Text eventText;
@@ -18,7 +18,7 @@ public class BusGameManager : MonoBehaviour
 
     void Start()
     {
-        TriggerDecision("The bus is here. Will you pay the $15 fare?", "Pay $15", "Go Home");
+        TriggerDecision("Last leg of the trip. Will you pay the $2 fare to reach the Supermarket?", "Pay $2", "Go Home");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -30,29 +30,36 @@ public class BusGameManager : MonoBehaviour
             driveTimer += Time.deltaTime;
         }
 
-        if (driveTimer > 5f && !stopTriggered) 
+        if (driveTimer > 7f && !stopTriggered) 
         {
             stopTriggered = true; 
-            StopBusAndShow("TRAFFIC JAM! It's going to be a long wait...", "Wait it out", "Walk Home");
-            //StartCoroutine(WaitAndLoad("ConvenienceCutscene", 5f));
+        
+            StopBusAndShow(
+                "PHYSICAL LIMIT: The bags from the first two stops are digging into your shoulders. Your back is throbbing, and you still have to walk blocks to the Supermarket. You're exhausted.", 
+                "Continue On", 
+                "Go Home"
+            );
         }
     }
 
     public void OnClickA()
     {
+        // Initial fare payment
         if (driveTimer < 1f) {
             GameManager.playerMoney -= 2; 
             Debug.Log("Paid fare. Money left: " + GameManager.playerMoney);
             ClosePopup();
         }
+        // Choosing to endure the pain to finish the errand
         else if (stopTriggered) {
             ClosePopup();
-            StartCoroutine(WaitAndLoad("ConvenienceCutscene", 3f));
+            StartCoroutine(WaitAndLoad("SupermarketCutscene", 3f));
         }
     }
 
     public void OnClickB() 
     {
+        // If the bags are too heavy, they give up and trigger the Failed Ending
         StopAllCoroutines();
         Time.timeScale = 1;
         SceneManager.LoadScene("FailedEndingHomeScreen"); 

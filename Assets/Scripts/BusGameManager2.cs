@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using TMPro;
 
-public class BusGameManager : MonoBehaviour
+public class BusGameManager2 : MonoBehaviour
 {
     public GameObject eventPanel;
     public TMP_Text eventText;
@@ -18,7 +18,7 @@ public class BusGameManager : MonoBehaviour
 
     void Start()
     {
-        TriggerDecision("The bus is here. Will you pay the $15 fare?", "Pay $15", "Go Home");
+        TriggerDecision("The bus is back to pick you up. Will you pay the extra $2 fare?", "Pay $2", "Go Home");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -30,11 +30,17 @@ public class BusGameManager : MonoBehaviour
             driveTimer += Time.deltaTime;
         }
 
-        if (driveTimer > 5f && !stopTriggered) 
+        if (driveTimer > 6f && !stopTriggered) 
         {
             stopTriggered = true; 
-            StopBusAndShow("TRAFFIC JAM! It's going to be a long wait...", "Wait it out", "Walk Home");
-            //StartCoroutine(WaitAndLoad("ConvenienceCutscene", 5f));
+        
+            StopBusAndShow(
+                "PHONE ALERT FROM ELSTER: She says if you aren't on Roblox in the next 10 minutes, they're starting without you.", 
+                "Keep Going", 
+                "Go Home & Play"
+            );
+        
+            //StartCoroutine(WaitAndLoad("RestaurantCutscene", 5f));
         }
     }
 
@@ -47,7 +53,7 @@ public class BusGameManager : MonoBehaviour
         }
         else if (stopTriggered) {
             ClosePopup();
-            StartCoroutine(WaitAndLoad("ConvenienceCutscene", 3f));
+            StartCoroutine(WaitAndLoad("RestaurantCutscene", 3f));
         }
     }
 

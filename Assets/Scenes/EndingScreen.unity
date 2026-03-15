@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2282, y: -0.42289}
-  m_SizeDelta: {x: 679.54, y: 893.04}
+  m_AnchoredPosition: {x: 2.5063, y: -0.42289}
+  m_SizeDelta: {x: 597.2216, y: 851.0049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238911907
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FadeAwayScript
   mode: 1
   fadeTime: 6
-  nextObject: {fileID: 1394800486}
+  nextObject: {fileID: 1299274836}
 --- !u!114 &238911908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,8 +193,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is not about availability. Food choice is driven by time, convenience,
-    and income.
+  m_text: 'This is not about availability.
+
+    Food choice is driven by time,  convenience, 
+    and income.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -287,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 0}
-  fullText: This is not about availability. Food choice is driven by time, convenience,
+  fullText: This is not about availability.\nFood choice is driven by time,  convenience, 
     and income.
   delay: 0.045
 --- !u!1 &405194527
@@ -617,8 +619,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2282, y: -0.42289}
-  m_SizeDelta: {x: 679.54, y: 893.04}
+  m_AnchoredPosition: {x: 4.2578, y: -16.186}
+  m_SizeDelta: {x: 600.7246, y: 851.0052}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749550769
 MonoBehaviour:
@@ -655,9 +657,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Around 43% of women in low income areas like Nairobi, Kenya were found
-    to be overweight or obese, with the cheapest foods available being often high
-    in sugar, fat, and salt.
+  m_text: Around 43% of women in low income areas like Nairobi Kenya were found to
+    be overweight or obese with the cheapest foods available being often high in
+    sugar & fat & salt.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -684,8 +686,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -750,9 +752,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 749550770}
-  fullText: Around 43% of women in low income areas like Nairobi, Kenya were found
-    to be overweight or obese, with the cheapest foods available being often high
-    in sugar, fat, and salt.
+  fullText: Around 43% of women in low income areas like Nairobi Kenya were found
+    to be overweight or obese with the cheapest foods available being often high
+    in sugar & fat & salt.
   delay: 0.045
 --- !u!1 &1110487104
 GameObject:
@@ -838,8 +840,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -927,8 +929,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2282, y: -0.42289}
-  m_SizeDelta: {x: 679.54, y: 893.04}
+  m_AnchoredPosition: {x: 1.4361, y: -12.9329}
+  m_SizeDelta: {x: 603.7119, y: 859.681}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299274838
 MonoBehaviour:
@@ -995,8 +997,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1100,8 +1102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2282, y: -0.42289}
-  m_SizeDelta: {x: 679.54, y: 893.04}
+  m_AnchoredPosition: {x: 4.257803, y: -17.500015}
+  m_SizeDelta: {x: 581.4587, y: 866.7684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394800488
 MonoBehaviour:
@@ -1116,8 +1118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeAwayScript
   mode: 1
-  fadeTime: 10
-  nextObject: {fileID: 1299274836}
+  fadeTime: 16
+  nextObject: {fileID: 1997057701}
 --- !u!114 &1394800489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,7 +1140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If a mother is working all day, she will buy the fried snack on the street
+  m_text: If a mother is working all day she will buy the fried snack on the street
     because she doesn't have the time or the money for the healthier alternative.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -1166,8 +1168,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1232,9 +1234,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 1394800489}
-  fullText: If a mother is working all day, she will buy the fried snack on the street
+  fullText: If a mother is working all day she will buy the fried snack on the street
     because she doesn't have the time or the money for the healthier alternative.
-  delay: 0.045
+  delay: 0.085
 --- !u!1 &1415464041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,8 +1273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: -279}
-  m_SizeDelta: {x: 259.6292, y: 72.6982}
+  m_AnchoredPosition: {x: 0.000034809, y: -244}
+  m_SizeDelta: {x: 229.1694, y: 58.8528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415464043
 MonoBehaviour:
@@ -1317,7 +1319,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1415464044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1848200310}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadSpecificScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StartScrene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1415464044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,11 +1504,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1899225832}
+  - {fileID: 1394800487}
   - {fileID: 1997057702}
   - {fileID: 1796938160}
   - {fileID: 749550768}
   - {fileID: 238911906}
-  - {fileID: 1394800487}
   - {fileID: 1299274837}
   - {fileID: 1415464042}
   m_Father: {fileID: 1478197151}
@@ -1524,8 +1538,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 450783732798221684, guid: e5fc589b899f240d8b5b19036d1ad70e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1707,8 +1721,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2282, y: -0.42289}
-  m_SizeDelta: {x: 679.54, y: 893.04}
+  m_AnchoredPosition: {x: 1.4361, y: -18.146}
+  m_SizeDelta: {x: 579.7072, y: 849.2538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796938161
 MonoBehaviour:
@@ -1745,8 +1759,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Animal source products like meat, eggs, and dairy were found to be very
-    expensive, thus leading to a preference of fried foods instead.
+  m_text: Animal source products like meat & eggs & dairy were found to be very expensive
+    thus leading to a preference of fried foods instead.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -1773,8 +1787,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1839,8 +1853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 1796938162}
-  fullText: Animal source products like meat, eggs, and dairy were found to be very
-    expensive, thus leading to a preference of fried foods instead.
+  fullText: Animal source products like meat & eggs & dairy were found to be very
+    expensive thus leading to a preference of fried foods instead.
   delay: 0.045
 --- !u!1 &1848200309
 GameObject:
@@ -1871,7 +1885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0795cc34aa12f46d0b511701ee666811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  SceneName: BeginningCutscene
 --- !u!4 &1848200311
 Transform:
   m_ObjectHideFlags: 0
@@ -1923,8 +1936,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.7532, y: 4.5921}
-  m_SizeDelta: {x: 674.59, y: 883.01}
+  m_AnchoredPosition: {x: 0.00003624, y: -0.42287}
+  m_SizeDelta: {x: 576.5087, y: 830.4664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1899225833
 MonoBehaviour:
@@ -1940,7 +1953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FadeAwayScript
   mode: 1
   fadeTime: 7
-  nextObject: {fileID: 1997057701}
+  nextObject: {fileID: 1394800486}
 --- !u!114 &1899225834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1961,11 +1974,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '________________
+  m_text: '______________
 
     Based off True Events and Life Stories...
 
-    -------------'
+    -----------'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -1992,8 +2005,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2058,7 +2071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 1899225834}
-  fullText: ________________ Based off True Events and Life Stories... \n-------------
+  fullText: ______________ Based off True Events and Life Stories...\n-----------
   delay: 0.045
 --- !u!1 &1997057701
 GameObject:
@@ -2096,8 +2109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.2282, y: -0.42289}
-  m_SizeDelta: {x: 679.54, y: 893.04}
+  m_AnchoredPosition: {x: 2.2874, y: -18.3753}
+  m_SizeDelta: {x: 593.7187, y: 859.7623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997057703
 MonoBehaviour:
@@ -2134,8 +2147,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Researchers found 1,163 vendors, but while there were many vendors, there
-    was very limited diversity in the types of fruits and vegetables actually available
+  m_text: 'Researchers found that while there were over 1160 vendors there was also
+    very limited diversity in the types of fruits and vegetables actually available.
 
 '
   m_isRightToLeft: 0
@@ -2164,8 +2177,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2230,9 +2243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 1997057704}
-  fullText: 'Researchers found 1,163 vendors, but while there were many vendors,
-    there was very limited diversity in the types of fruits and vegetables actually
-    available '
+  fullText: 'Researchers found that while there were over 1160 vendors there was
+    also very limited diversity in the types of fruits and vegetables actually available. '
   delay: 0.045
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
