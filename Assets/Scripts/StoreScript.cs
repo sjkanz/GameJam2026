@@ -19,6 +19,10 @@ public class StoreScript : MonoBehaviour
     public GameObject ramenPrefab;
     public GameObject rawFishPrefab;
     public GameObject eggPrefab;
+    public GameObject restApplePiePrefab;
+    public GameObject restRamenPrefab;
+    public GameObject restFishPrefab;
+    public GameObject hotDogPrefab;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -110,4 +114,37 @@ public class StoreScript : MonoBehaviour
         player.changeGroceryList(myItem);
         invManager.AddToInventory(eggPrefab);
     }
+
+    public void restApplePie()
+    {
+        print("purchasing...");
+        InventoryItem myItem = new InventoryItem("Apple Pie", 23, 3);
+        player.changeGroceryList(myItem);
+        invManager.AddToInventory(restApplePiePrefab);
+    }
+
+    public void restRamen()
+    {
+        print("purchasing...");
+        InventoryItem myItem = new InventoryItem("Ramen", 16, 3);
+        player.changeGroceryList(myItem);
+        invManager.AddToInventory(restRamenPrefab);
+    }
+
+    public void restFish()
+    {
+        print("purchasing...");
+        InventoryItem myItem = new InventoryItem("Raw Fish", 25, 5);
+        player.changeGroceryList(myItem);
+        invManager.AddToInventory(restFishPrefab);
+    }
+
+    public void hotDog()
+    {
+        print("purchasing...");
+        InventoryItem myItem = new InventoryItem("Hot Dog", 5, 2);
+        player.changeGroceryList(myItem);
+        invManager.AddToInventory(hotDogPrefab);
+    }
+
 }
